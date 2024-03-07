@@ -11,10 +11,6 @@ body{
     gap: 2vh;
     overflow-x: hidden;
     padding: 25px;
-    background-color: black;
-    background-image: url(../menu/imagens/imgfullsize.png);
-    background-repeat: no-repeat;
-    background-size: cover;
     
 }
 
@@ -35,7 +31,30 @@ h1,h2{
     font-weight: 900;
     letter-spacing: 2px;
     text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    padding: 1%;
 }
+
+.wrap-menu{
+    position: fixed;
+    top: 0;
+    background-color: #b2164f;
+    width: 100%;
+    height: 56px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    z-index: 999;
+  }
+  
+  ul {
+    position: absolute;
+    top: 8px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    
+}
+
 
 .wrap-cards{
     display: flex;

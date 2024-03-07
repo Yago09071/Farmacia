@@ -19,9 +19,11 @@
     </div>
     <div class="btn-group" role="group" aria-label="Basic example">
         <button onclick="window.location.href='../menu/page.html'" type="button" class="btn btn-dark">Menu</button>
-        <button onclick="window.location.href='../Medicamentos/page.html'" type="button" class="btn btn-dark">Medicamentos</button>
+        <button onclick="window.location.href='../Medicamentos/page.html'" type="button" class="btn btn-dark">Showroom</button>
     </div>
     <h1>Pedido</h1>
+
+
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Nome:</label>
         <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nome completo">
@@ -33,76 +35,81 @@
         <h3>Remedios anti alergicos</h3> 
         <select class="form-select" aria-label="Default select example" id="select-anti-alergico">
             <option selected>Selecione seu medicamento</option>
-            <option value="Remedio1AA">Fluconozema</option>
-            <option value="Remedio2AA">Gastrote</option>
-            <option value="Remedio3AA">Colflex</option>
-            <option value="Remedio4AA">CaldêMDK</option>
-            <option value="Remedio5AA">Colageno equaliv</option>
+            <option value="Fluconozema">Fluconozema</option>
+            <option value="Gastrote">Gastrote</option>
+            <option value="Colflex">Colflex</option>
+            <option value="CaldêMDK">CaldêMDK</option>
+            <option value="Colageno equaliv">Colageno equaliv</option>
           </select>
           <h3>Remedios cardiologicos</h3>
           <select class="form-select" aria-label="Default select example" id="select-cardiologico">
             <option selected>Selecione seu medicamento</option>
-            <option value="Remedio1C">Magnesio complex</option>
-            <option value="Remedio2C">Coenzima</option>
-            <option value="Remedio3C">Andractiv</option>
-            <option value="Remedio4C">DermUP</option>
-            <option value="Remedio5C">20 bi</option>
+            <option value="Magnesio complex">Magnesio complex</option>
+            <option value="Coenzima">Coenzima</option>
+            <option value="Andractiv">Andractiv</option>
+            <option value="DermUP">DermUP</option>
+            <option value="20 bi">20 bi</option>
           </select>
           <h3>Remedios anti inflamatorio</h3>
           <select class="form-select" aria-label="Default select example" id="select-anti-inflamatorio">
             <option selected>Selecione seu medicamento</option>
-            <option value="Remedio1AI">Frauldapumpers</option>
-            <option value="Remedio2AI">Enterogermina</option>
-            <option value="Remedio3AI">Cicatricure</option>
-            <option value="Remedio4AI">Agua micelar</option>
-            <option value="Remedio5AI">Loreal Paris</option>
+            <option value="Frauldapumpers">Frauldapumpers</option>
+            <option value="Enterogermina">Enterogermina</option>
+            <option value="Cicatricure">Cicatricure</option>
+            <option value="Agua micelar">Agua micelar</option>
+            <option value="Loreal Paris">Loreal Paris</option>
           </select>
           <h3>Remedios para dores</h3>
           <select class="form-select" aria-label="Default select example" id="select-Dores">
             <option selected>Selecione seu medicamento</option>
-            <option value="Remedio1D">Naproxeno</option>
-            <option value="Remedio2D">Lavitan</option>
-            <option value="Remedio3D">Atroveran</option>
-            <option value="Remedio4D">Medley Dipirona</option>
-            <option value="Remedio5D">Prati paracetamol</option>
+            <option value="Doralgina">Doralgina</option>
+            <option value="Lavitan">Lavitan</option>
+            <option value="Atroveran">Atroveran</option>
+            <option value="Medley Dipirona">Medley Dipirona</option>
+            <option value="Prati paracetamol">Prati paracetamol</option>
           </select>
           <h3>Remedios para inchaço</h3>
           <select class="form-select" aria-label="Default select example" id="select-Inchaco">
             <option selected>Selecione seu medicamento</option>
-            <option value="Remedio1I">Deltametril</option>
-            <option value="Remedio2I">Suprabio</option>
-            <option value="Remedio3I">Nevralgex</option>
-            <option value="Remedio4I">Sanasar</option>
-            <option value="Remedio5I">vitaminas neo química</option>
+            <option value="Deltametril">Deltametril</option>
+            <option value="Suprabio">Suprabio</option>
+            <option value="Nevralgex">Nevralgex</option>
+            <option value="Sanasar">Sanasar</option>
+            <option value="vitaminas neo química">vitaminas neo química</option>
           </select>
           
           
         </div>
         <div>
         <button type="button" onclick="calcularTotal()" class="btn btn-success">Fazer pedido</button>
-        <button type="button" onclick="limpar()" class="btn btn-outline-secondary">Limpar</button>
+        <button type="button" onclick="limpar()" class="btn btn-warning">Limpar</button>
         </div>
         <div>
             <span class="badge bg-dark">Total:</span>
             <span class="badge bg-danger" id="resultado"></span>
         </div>
         <div id="pedido-pronto" class="pronto">
-          <h4>RemedioAA</h4>
+          <h4>Remedio Anti Alergico selecionado:</h4>
           <p id="RemedioAA-pronto"></p>
           <br>
-          <h4>RemedioC</h4>
+          <h4>Remedio Cardiologico selecionado:</h4>
           <p id="RemedioC-pronto"></p>
           <br>
-          <h4>RemedioAI</h4>
+          <h4>Remedio Anti Inflamatorio selecionado:</h4>
           <p id="RemedioAI-pronto"></p>
           <br>
-          <h4>RemedioD</h4>
+          <h4>Remedio para Dor selecionado:</h4>
           <p id="RemedioD-pronto"></p>
           <br>
-          <h4>RemedioI</h4>
+          <h4>Remedio para Inchaço selecionado:</h4>
           <p id="RemedioI-pronto"></p>
           <br>
         </div>
     </div>
+    <div class="text" id="zap">
+      <div class="confbutton">
+          <button onclick="enviar()" class="btn-outline-dark">Enviar Pedido</button>
+      </div>
+  </div>
 </body>
 </html>

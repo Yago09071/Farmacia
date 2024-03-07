@@ -10,6 +10,9 @@ body{
     align-items: center;
     justify-content: center;
     gap: 2vh;
+    background-image: url("../imagens/fundo-desfocado-do-interior-da-loja-da-farmacia-e-drogaria_293060-16096.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #selects-div{
